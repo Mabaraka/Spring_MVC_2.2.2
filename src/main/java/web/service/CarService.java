@@ -21,6 +21,9 @@ public class CarService {
     }
 
     public List<Car> getCars(int amount) {
-        return cars.stream().limit(amount).collect(Collectors.toList());
+        if(amount >= 0){
+            return cars.stream().limit(amount).collect(Collectors.toList());
+        }
+        return cars;
     }
 }
