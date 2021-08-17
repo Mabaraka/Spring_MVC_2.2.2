@@ -5,6 +5,12 @@ public class Car {
     private int maxSpeed;
     private int maxDistance;
 
+    public Car(int id, int maxSpeed, int maxDistance) {
+        this.id = id;
+        this.maxSpeed = maxSpeed;
+        this.maxDistance = maxDistance;
+    }
+
     public int getId() {
         return id;
     }
@@ -29,9 +35,4 @@ public class Car {
         this.maxDistance = maxDistance;
     }
 
-    public Car(int id, int maxSpeed, int maxDistance) {
-        this.id = id;
-        this.maxSpeed = maxSpeed;
-        this.maxDistance = maxDistance;
-    }
 }
